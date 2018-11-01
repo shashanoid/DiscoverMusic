@@ -7,8 +7,12 @@
 //
 
 import UIKit
+import AVFoundation
+
 
 class CardCell: UICollectionViewCell {
+    
+    
     
     let frontCardView: UIView = {
         let frontCardView = UIView()
@@ -30,10 +34,10 @@ class CardCell: UICollectionViewCell {
     }()
     
     
-    
     override init(frame: CGRect) {
-        super.init(frame: frame)
         
+        super.init(frame: frame)
+
         backgroundColor = UIColor(red:0.15, green:0.16, blue:0.18, alpha:1.0)
         
         addSubview(backCardView)
